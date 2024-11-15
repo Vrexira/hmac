@@ -88,7 +88,8 @@ Verifies the HMAC tag for the given data.
 **Returns:** `True` if the tag is valid, `False` otherwise.
 
 ## Key Validation
-Keys longer than the hash block size are hashed. Keys shorter than the block size are padded with zero bytes.
+- Keys longer than the hash block size are hashed. 
+- Keys shorter than the block size are padded with zero bytes.
 
 ## Security Features
 - Inner and outer padding (`ipad`, `opad`) are securely prepared.
